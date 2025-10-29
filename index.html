@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty Episodes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container filter-bar">
+    <input type="text" id="name" placeholder="Enter the name" class="input-field">
+    <select id="season" class="select-field">
+      <option value="">All seasons</option>
+      <option value="S01">Season 1</option>
+      <option value="S02">Season 2</option>
+      <option value="S03">Season 3</option>
+      <option value="S04">Season 4</option>
+      <option value="S05">Season 5</option>
+    </select>
+</div>
+
+  <main>
+    <section id="episodes" class="episodes-grid"></section>
+    <div id="noResults" class="hidden">
+      <img src="kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5 2.png" alt="No results">
+      <p>Oops! Try looking for something else...</p>
+    </div>
+    <button id="loadMore">Load more</button>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
