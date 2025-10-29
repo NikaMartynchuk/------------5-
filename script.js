@@ -1,4 +1,4 @@
-import { getEpisodes, getEpisodeById, getCharacterById } from './api.js';
+import { getEpisodes, getEpisodeById, getCharacterById } from './API.js';
 
 const episodesContainer = document.getElementById("episodes");
 const loadMoreBtn = document.getElementById("loadMore");
